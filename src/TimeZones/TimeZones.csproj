@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- Product Information -->
+        <Product>TimeZones</Product>
+        <Authors>Kenneth LeFebvre</Authors>
+        <Company>Blacksmith Press</Company>
+        <Description>This is the implementation of some functionality.</Description>
+        <Copyright>Copyright © 2020 by Kenneth LeFebvre. All rights reserved.</Copyright>
+        <PackageReleaseNotes>
+            Initial creation
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- Assembly Information -->
+        <DocumentationFile>obj\TimeZones.xml</DocumentationFile>
+        <Version>1.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <AssemblyName>TimeZones</AssemblyName>
+        <RootNamespace>TimeZones</RootNamespace>
+        <UserSecretsId>TimeZones</UserSecretsId>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- Build Options -->
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GeoTimeZone" Version="4.0.0" />
+    </ItemGroup>
+
+</Project>

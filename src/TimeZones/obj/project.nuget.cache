@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xBJLiwxWDx1BdPJllKupYUlFMm6DmZHlB1yYps5Mc7rvLQBvYQT3o0CtFhwgRZlzOtiUC4rAhA79qEPXGrUmgA==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\github.com\\kenlefeb\\timezones\\src\\TimeZones\\TimeZones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kenle\\.nuget\\packages\\geotimezone\\4.0.0\\geotimezone.4.0.0.nupkg.sha512",
+    "C:\\Users\\kenle\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

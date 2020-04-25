@@ -1,0 +1,10 @@
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.csprojAssemblyReference.cache
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.csproj.CoreCompileInputs.cache
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.AssemblyInfoInputs.cache
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.AssemblyInfo.cs
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\bin\Debug\netstandard2.0\TimeZones.deps.json
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\bin\Debug\netstandard2.0\TimeZones.dll
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\bin\Debug\netstandard2.0\TimeZones.pdb
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\bin\Debug\netstandard2.0\TimeZones.xml
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.dll
+C:\Source\github.com\kenlefeb\timezones\src\TimeZones\obj\Debug\netstandard2.0\TimeZones.pdb
