@@ -23,7 +23,7 @@ namespace Tests.Services.Models
 			actual.Longitude.Should().Be(longitude);
 		}
 
-		private IEnumerable<object[]> CastingTextCoordinatesToCoordinates()
+		public static IEnumerable<object[]> CastingTextCoordinatesToCoordinates()
 		{
 			yield return new object[] { "41.5057367,-81.6945422", Coordinates.Parse("41.5057367, -81.6945422") };
 		}
@@ -39,35 +39,5 @@ namespace Tests.Services.Models
 			actual.Should().Be(expected);
 		}
 
-	}
-
-	public class GivenTimeZone
-	{
-		private IEnumerable<object[]> CastingIanaNameToTimeZone()
-		{
-			yield return new object[] { "America/Detroit", Zone.Parse("America/Detroit") };
-		}
-
-		[Theory]
-		[MemberData(nameof(CastingIanaNameToTimeZone))]
-		public void WhenIHaveIanaName_ThenICanParseTimeZoneFromIt(string input, Zone expected)
-		{
-			// act
-			var actual = Zone.Parse(input);
-
-			// assert
-			actual.Should().Be(expected);
-		}
-
-		[Theory]
-		[MemberData(nameof(CastingIanaNameToTimeZone))]
-		public void WhenIHaveIanaName_ThenIHaveTimeZone(string input, Zone expected)
-		{
-			// act
-			var actual = (Zone)input;
-
-			// assert
-			actual.Should().Be(expected);
-		}
 	}
 }

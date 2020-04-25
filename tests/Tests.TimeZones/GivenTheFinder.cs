@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AutoFixture;
 using AutoFixture.Xunit2;
 using FakeItEasy;
@@ -15,10 +16,15 @@ namespace Tests.Services
 			_finder = new Finder();
 		}
 
+		private static IEnumerable<object[]> SampleCoordinatesWithCorrectTimeZones()
+		{
+			yield return new object[] { Coordinates.Parse("41.3643373,-81.8770663"), Zone.Parse("America/Detroit") };
+			yield return new object[] { Coordinates.Parse("39.850067, -86.347219"), Zone.Parse("America/Indiana/Indianapolis") };
+			yield return new object[] { Coordinates.Parse("35.4536748,-97.3453418"), Zone.Parse("America/Chicago") };
+		}
+
 		[Theory]
-		[InlineData("41.3643373,-81.8770663","America/Detroit")]
-		[InlineData("39.850067, -86.347219","America/Indiana/Indianapolis")]
-		[InlineData("35.4536748,-97.3453418","America/Chicago")]
+		[MemberData(nameof(SampleCoordinatesWithCorrectTimeZones))]
 		public void WhenIHaveCoordinates_ThenIGetTimeZoneForNow(Coordinates coordinates, Zone expected)
 		{
 			// act
