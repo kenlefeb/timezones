@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using TimeZones;
 using Xunit;
-using TimeZone = TimeZones.TimeZone;
 
 namespace Tests.Services.Models
 {
@@ -46,15 +45,15 @@ namespace Tests.Services.Models
 	{
 		private IEnumerable<object[]> CastingIanaNameToTimeZone()
 		{
-			yield return new object[] { "America/Detroit", TimeZone.Parse("America/Detroit") };
+			yield return new object[] { "America/Detroit", Zone.Parse("America/Detroit") };
 		}
 
 		[Theory]
 		[MemberData(nameof(CastingIanaNameToTimeZone))]
-		public void WhenIHaveIanaName_ThenICanParseTimeZoneFromIt(string input, TimeZone expected)
+		public void WhenIHaveIanaName_ThenICanParseTimeZoneFromIt(string input, Zone expected)
 		{
 			// act
-			var actual = TimeZone.Parse(input);
+			var actual = Zone.Parse(input);
 
 			// assert
 			actual.Should().Be(expected);
@@ -62,10 +61,10 @@ namespace Tests.Services.Models
 
 		[Theory]
 		[MemberData(nameof(CastingIanaNameToTimeZone))]
-		public void WhenIHaveIanaName_ThenIHaveTimeZone(string input, TimeZone expected)
+		public void WhenIHaveIanaName_ThenIHaveTimeZone(string input, Zone expected)
 		{
 			// act
-			var actual = (TimeZone)input;
+			var actual = (Zone)input;
 
 			// assert
 			actual.Should().Be(expected);

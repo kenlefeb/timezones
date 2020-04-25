@@ -31,6 +31,8 @@
         <NeutralLanguage>en-US</NeutralLanguage>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>CS1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -44,7 +46,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\TimeZones\TimeZones.csproj" />
+        <ProjectReference Include="..\..\src\TimeZones\TimeZones.csproj" />
     </ItemGroup>
 
 </Project>
