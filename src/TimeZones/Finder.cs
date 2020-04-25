@@ -17,7 +17,8 @@ namespace TimeZones
 		/// <exception cref="NotImplementedException"></exception>
 		public Zone FindTimeZone(Coordinates coordinates)
 		{
-			throw new NotImplementedException();
+			var result = GeoTimeZone.TimeZoneLookup.GetTimeZone(coordinates.Latitude, coordinates.Longitude);
+			return Zone.Parse(result.Result);
 		}
 	}
 }

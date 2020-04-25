@@ -18,7 +18,7 @@ namespace Tests.Services
 
 		private static IEnumerable<object[]> SampleCoordinatesWithCorrectTimeZones()
 		{
-			yield return new object[] { Coordinates.Parse("41.3643373,-81.8770663"), Zone.Parse("America/Detroit") };
+			yield return new object[] { Coordinates.Parse("41.3643373,-81.8770663"), Zone.Parse("America/New_York") };
 			yield return new object[] { Coordinates.Parse("39.850067, -86.347219"), Zone.Parse("America/Indiana/Indianapolis") };
 			yield return new object[] { Coordinates.Parse("35.4536748,-97.3453418"), Zone.Parse("America/Chicago") };
 		}
