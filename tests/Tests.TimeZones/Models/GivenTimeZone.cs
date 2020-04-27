@@ -28,7 +28,7 @@ namespace Tests.Services.Models
 		public void WhenIHaveIanaName_ThenIHaveTimeZone(string input, Zone expected)
 		{
 			// act
-			var actual = (Zone)input;
+			Zone actual = input;
 
 			// assert
 			actual.Should().Be(expected);

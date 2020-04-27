@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+    <PropertyGroup>
+        <!-- Product Information -->
+        <Product>TimeZones</Product>
+        <Authors>Kenneth LeFebvre</Authors>
+        <Company>Blacksmith Press</Company>
+        <Description>These are the tests for the Web API.</Description>
+        <Copyright>Copyright © 2020 by Kenneth LeFebvre. All rights reserved.</Copyright>
+        <PackageReleaseNotes>
+            Initial creation
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- Assembly Information -->
+        <DocumentationFile>obj\Tests.Api.xml</DocumentationFile>
+        <Version>1.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <AssemblyName>Tests.Api</AssemblyName>
+        <RootNamespace>Tests.Api</RootNamespace>
+        <UserSecretsId>TimeZones</UserSecretsId>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- Build Options -->
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>CS1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+        <PackageReference Include="coverlet.collector" Version="1.2.1" />
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="AutoFixture.Xunit2" Version="4.11.0" />
+        <PackageReference Include="AutoFixture.AutoFakeItEasy" Version="4.11.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\TimeZones.Api\TimeZones.Api.csproj" />
+    </ItemGroup>
+
+</Project>
